@@ -21,25 +21,3 @@ To follow the exercises:
  4. Method References
 
 [More to come]
-
-
-### Getting Lambda JDK
-Early access builds of JDK 8 are available [here](https://jdk8.java.net/download.html). 
- 
-
-#### Lamba JDK Build Compatibility
-The current tutorial is known to work with the following JDK build:
-
-|JDK Build Number|Released On |
-|:---------------|:---------- |
-|ea b109         |Sep 26, 2013|
-
-lambda-tutorial will try to track against the newest version available. If you find that you are working with a newer version of the Lambda JDK and the tutorial does not compile or run, please file an issue.
-
-### IDE Setup
-- [IntelliJ IDEA on Ubuntu](https://github.com/AdoptOpenJDK/lambda-tutorial/wiki/IntelliJ-IDEA-on-Ubuntu-%5BLinux%5D)
-- [IntelliJ IDEA on MacOS](https://github.com/AdoptOpenJDK/lambda-tutorial/wiki/IntelliJ-IDEA-on-MacOS)
-- [IntelliJ IDEA deutsche Anleitung (u.a. Windows)](https://github.com/AdoptOpenJDK/lambda-tutorial/wiki/IntelliJ-IDEA-Einrichtung)
-- [Eclipse Kepler 4.3 on Windows](https://github.com/AdoptOpenJDK/lambda-tutorial/wiki/Eclipse-Lambda-EA-Setup)
-
-<b>Note: we are hoping the instructions are not too sensitive to the OSes on which they have been performed.</b>
