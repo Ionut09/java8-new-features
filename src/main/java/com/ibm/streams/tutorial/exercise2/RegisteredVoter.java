@@ -1,5 +1,8 @@
 package com.ibm.streams.tutorial.exercise2;
 
+import java.util.stream.Stream;
+
+import static java.util.stream.Collectors.joining;
 
 public final class RegisteredVoter {
 
@@ -18,6 +21,9 @@ public final class RegisteredVoter {
 
         if (!electorId.equals(that.getElectorId())) return false;
 
+		Stream<String> str = Stream.empty();
+		// R java.util.stream.Stream.collect(Collector<? super T, A, R> collector)
+		str.collect(joining(""));
         return true;
     }
 
