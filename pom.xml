@@ -9,58 +9,10 @@
 
     <name>lambda-tutorial</name>
     <description>Adopt OpenJDK Tutorial to teach people about Lambdas!</description>
-    <url>http://www.github.com/adoptopenjdk/lambdas-tutorial</url>
-    <inceptionYear>2013</inceptionYear>
 
     <prerequisites>
         <maven>3.0.5</maven>
     </prerequisites>
-
-    <licenses>
-        <license>
-            <name>GNU General Public License (GPL) v2</name>
-            <url>http://www.gnu.org/licenses/gpl2.txt</url>
-            <distribution>repo</distribution>
-            <comments>As per OpenJDK itself</comments>
-        </license>
-    </licenses>
-
-    <organization>
-        <name>Adopt OpenJDK</name>
-        <url>http://adoptopenjdk.java.net/</url>
-    </organization>
-
-    <developers>
-        <developer>
-            <name>Graham Allan</name>
-            <timezone>GMT</timezone>
-        </developer>
-    </developers>
-
-    <contributors>
-        <contributor>
-            <name>Martijn Verburg</name>
-            <timezone>GMT</timezone>
-        </contributor>
-    </contributors>
-
-    <issueManagement>
-        <system>GitHub</system>
-        <url>https://github.com/AdoptOpenJDK/lambda-tutorial/issues</url>
-    </issueManagement>
-
-    <ciManagement>
-        <system>TBA</system>
-        <url>TBA</url>
-    </ciManagement>
-
-    <mailingLists>
-        <mailingList>
-            <name>Adopt OpenJDK Group/Mailing List</name>
-            <post>adopt-openjdk@googlegroups.com</post>
-            <unsubscribe>adopt-openjdk+unsubscribe@googlegroups.com</unsubscribe>
-        </mailingList>
-    </mailingLists>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -216,7 +168,7 @@
                                 <version>2.3</version>
                             </plugin>
                             <!-- TODO When PMD supports 1.8 -->
-                            <!-- 
+                            <!--
                             <plugin>
                                 <groupId>org.apache.maven.plugins</groupId>
                                 <artifactId>maven-pmd-plugin</artifactId>
@@ -337,11 +289,5 @@
 
         
     </build>
-
-    <scm>
-        <developerConnection>scm:git:git@github.com:AdoptOpenJDK/lambda-tutorial.git</developerConnection>
-        <url>https://github.com/AdoptOpenJDK/lambda-tutorial</url>
-        <tag>HEAD</tag>
-    </scm>
 
 </project>

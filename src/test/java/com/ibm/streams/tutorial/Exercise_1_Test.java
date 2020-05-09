@@ -3,16 +3,19 @@ package com.ibm.streams.tutorial;
 import com.ibm.streams.tutorial.exercise1.Color;
 import com.ibm.streams.tutorial.exercise1.Shape;
 import com.ibm.streams.tutorial.exercise1.Shapes;
+import com.ibm.streams.tutorial.util.FeatureMatchers;
+
 import org.hamcrest.Matcher;
 import org.hamcrest.Matchers;
 import org.junit.Test;
 
-import com.ibm.streams.tutorial.util.FeatureMatchers;
-
 import java.util.Arrays;
 import java.util.List;
 
-import static com.ibm.streams.tutorial.exercise1.Color.*;
+import static com.ibm.streams.tutorial.exercise1.Color.BLACK;
+import static com.ibm.streams.tutorial.exercise1.Color.BLUE;
+import static com.ibm.streams.tutorial.exercise1.Color.RED;
+import static com.ibm.streams.tutorial.exercise1.Color.YELLOW;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.everyItem;
@@ -27,7 +30,6 @@ import static org.hamcrest.Matchers.hasSize;
  * </p>
  * <p>
  * This refers to the trusty "for loop":
- * TODO Bug in the Javdoc processor? It claims the code annotation construct is invalid
  * <pre>
  * {@code
  *    for (Shape s: shapes) {

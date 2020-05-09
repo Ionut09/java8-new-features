@@ -1,8 +1,5 @@
 package com.ibm.streams.tutorial;
 
-import org.hamcrest.Matcher;
-import org.junit.Test;
-
 import com.ibm.streams.tutorial.exercise2.Ballot;
 import com.ibm.streams.tutorial.exercise2.ElectoralDistrict;
 import com.ibm.streams.tutorial.exercise2.Party;
@@ -10,6 +7,9 @@ import com.ibm.streams.tutorial.exercise2.Person;
 import com.ibm.streams.tutorial.exercise2.RegisteredVoter;
 import com.ibm.streams.tutorial.exercise2.VotingRules;
 import com.ibm.streams.tutorial.util.FeatureMatchers;
+
+import org.hamcrest.Matcher;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -25,7 +25,6 @@ import java.util.stream.Stream;
 
 import static com.ibm.streams.tutorial.exercise2.ElectoralDistrict.HACKNEY;
 import static java.util.Arrays.asList;
-import static java.util.Arrays.binarySearch;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsInAnyOrder;
 import static org.hamcrest.Matchers.equalTo;
@@ -43,8 +42,7 @@ import static org.hamcrest.Matchers.not;
  * </p>
  * <p>
  * Consider how often you have written code like this:
- * TODO Bug in the Javdoc processor? It claims the code annotation construct is invalid
- * <pre> 
+ * <pre>
  * {@code
  *     List<String> things = new ArrayList<>();
  *     for (String s: otherThings) {
