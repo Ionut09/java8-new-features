@@ -102,11 +102,11 @@ public final class CodeUsesMethodReferencesMatcher extends TypeSafeDiagnosingMat
     }
 
     private File findRootOfProject(File cwd) {
-        File[] pomFiles = cwd.listFiles((file, name) -> { return name.equals("pom.xml"); });
+        File[] pomFiles = cwd.listFiles((file, name) -> { return name.equals("build.gradle"); });
         if (pomFiles != null && pomFiles.length == 1) {
             return cwd;
         } else if (cwd.getParentFile() == null) {
-            throw new RuntimeException("Couldn't find directory containing pom.xml. Last looked in: " + cwd.getAbsolutePath());
+            throw new RuntimeException("Couldn't find directory containing build.gradle. Last looked in: " + cwd.getAbsolutePath());
         } else {
             return findRootOfProject(cwd.getParentFile());
         }
